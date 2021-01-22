@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail';
+import ApprovalCard from './ApprovalCard';
 import faker from 'faker';
 
 const App = () => {
   return (
     <div className="ui container comments">
+      
       <CommentDetail 
         author={faker.name.firstName()} 
         timeAgo="Today 3:32AM" 
@@ -24,6 +26,8 @@ const App = () => {
         avatarSRC={faker.image.cats()} 
         commentContent="Cool blog!"
       />
+
+      <ApprovalCard />
     </div>
   );
 };
